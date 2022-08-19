@@ -112,7 +112,8 @@ public class TrailerPlayerView: UIView {
     }
     
     public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        setup()
     }
     
     public override func layoutSublayers(of layer: CALayer) {
